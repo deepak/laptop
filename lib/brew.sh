@@ -3,7 +3,7 @@
 set -euo pipefail
 
 if ! command -v brew >/dev/null; then
-  # homebrew installs xcode command line tools
+  # NOTE: homebrew installs xcode command line tools
   curl -fsS \
     'https://raw.githubusercontent.com/Homebrew/install/master/install' | ruby
 fi
@@ -13,7 +13,9 @@ if brew list | grep -Fq brew-cask; then
 fi
 
 # TODO: run periodically or fail fast if internet roundtrip is slow
-# brew update --force # https://github.com/Homebrew/brew/issues/1151
+# NOTE: using `--force` due to https://github.com/Homebrew/brew/issues/1151
+# brew update --force
+
 cat "./configs/Brewfile" | brew bundle --file=-
 cat "./configs/Brewfile" | brew bundle cleanup --force --file=-
 
