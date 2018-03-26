@@ -1,0 +1,22 @@
+cask_args appdir: "~/Applications", fontdir: "~/Library/Fonts"
+
+tap "homebrew/services"
+tap "caskroom/cask"
+
+# osx
+brew "mas"
+
+# code tools
+brew "git"
+brew "zsh"
+brew "ag"
+
+# github
+brew "hub"
+
+# casks
+
+cask "google-chrome"
+cask "visual-studio-code"
+cask "hyper"
+cask "skype"
