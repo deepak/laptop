@@ -1,3 +1,10 @@
+# secrets
+/configs/ssh-keys/
+
+# local cruft
+/TODO.org
+/dev
+/configs/backups/
 
 # macOS
 *.DS_Store
