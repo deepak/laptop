@@ -2,21 +2,35 @@ cask_args appdir: "~/Applications", fontdir: "~/Library/Fonts"
 
 tap "homebrew/services"
 tap "caskroom/cask"
+tap "caskroom/versions"
 
-# osx
+# cli
 brew "mas"
+brew "hub"
+brew "wifi-password"
+brew "youtube-dl"
+cask "ngrok"
 
 # code tools
 brew "git"
 brew "zsh"
 brew "ag"
+brew "jq"
+brew "tree"
+brew "pstree"
+brew "wget"
+brew "wrk"
+brew "shellcheck"
 
-# github
-brew "hub"
-
-# casks
-
-cask "google-chrome"
+# coding
+brew "exercism"
 cask "visual-studio-code"
 cask "hyper"
+
+# browsers
+cask "google-chrome"
+cask "firefox-developer-edition"
+
+# others
+cask "daisydisk"
 cask "skype"
