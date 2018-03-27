@@ -1,5 +1,7 @@
 # laptop
 
+[![Build Status](https://travis-ci.org/deepak/laptop.svg?branch=master)](https://travis-ci.org/deepak/laptop)
+
 setup script for laptop. works and tested on macOS High Sierra (10.13)
 
 ## Setup
