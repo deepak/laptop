@@ -1,0 +1,21 @@
+language: bash
+# non sudo will be a faster container-based build.
+# but for now, we need sudo for installing shellcheck.
+sudo: required
+
+git:
+  depth: 2
+  submodules: false
+
+services:
+  - docker
+
+before_install:
+  - docker pull koalaman/shellcheck
+
+script:
+ - pwd
+ - docker run -v $(pwd):/laptop koalaman/shellcheck /laptop/bin/lint.sh
+
+notifications:
+  email: false
