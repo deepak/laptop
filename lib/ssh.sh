@@ -37,6 +37,7 @@ chmod 644 ~/.ssh/config
 # remove remembered pass from macOS keychain
 # CREDIT: https://lobste.rs/s/sounxg/macos_sierra_permanently_remembers_ss
 ssh-add -D -K &> /dev/null
-for f in ~/Library/Keychains/*/keychain-2.db; do sqlite3 $f "delete from genp where agrp = 'com.apple.ssh.passphrases';"; done
+# shellcheck disable=SC2086
+for f in /$HOME/Library/Keychains/*/keychain-2.db; do sqlite3 $f "delete from genp where agrp = 'com.apple.ssh.passphrases';"; done
 
 echo "[INFO] configure ssh"

@@ -7,15 +7,14 @@ git:
   depth: 2
   submodules: false
 
-services:
-  - docker
-
 before_install:
-  - docker pull koalaman/shellcheck
+  - wget https://storage.googleapis.com/shellcheck/shellcheck-latest.linux.x86_64.tar.xz -O /tmp/shellcheck-latest.tar.xz
+  - tar -xvf /tmp/shellcheck-latest.tar.xz
+  - export PATH=$PWD/shellcheck-latest/:$PATH
+  - which shellcheck
+  - shellcheck -V
 
-script:
- - pwd
- - docker run -v $(pwd):/laptop koalaman/shellcheck /laptop/bin/lint.sh
+script: ./bin/lint.sh
 
 notifications:
   email: false
