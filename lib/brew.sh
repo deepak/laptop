@@ -8,10 +8,6 @@ if ! command -v brew >/dev/null; then
     'https://raw.githubusercontent.com/Homebrew/install/master/install' | ruby
 fi
 
-if brew list | grep -Fq brew-cask; then
-  brew uninstall --force brew-cask
-fi
-
 # TODO: run periodically or fail fast if internet roundtrip is slow
 # NOTE: using `--force` due to https://github.com/Homebrew/brew/issues/1151
 # brew update --force

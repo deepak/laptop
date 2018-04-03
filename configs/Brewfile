@@ -10,18 +10,22 @@ brew "mas"
 brew "hub"
 brew "wifi-password"
 brew "youtube-dl"
+brew "httrack"
 cask "ngrok"
 
 # code tools
 brew "git"
 brew "zsh"
+brew "grep"
 brew "ag"
+brew "moreutils"
 brew "jq"
 brew "tree"
 brew "pstree"
 brew "wget"
 brew "wrk"
 brew "shellcheck"
+cask "meld"
 
 # coding
 brew "exercism"
