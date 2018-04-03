@@ -3,6 +3,7 @@ cask_args appdir: "~/Applications", fontdir: "~/Library/Fonts"
 tap "homebrew/services"
 tap "caskroom/cask"
 tap "caskroom/versions"
+tap "caskroom/fonts"
 
 # cli
 brew "mas"
@@ -34,3 +35,7 @@ cask "firefox-developer-edition"
 # others
 cask "daisydisk"
 cask "skype"
+
+# fonts
+# https://github.com/Homebrew/homebrew-bundle/issues/291#issuecomment-333902433
+cask "caskroom/fonts/font-fira-code"
