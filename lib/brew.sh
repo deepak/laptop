@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
-
 if ! command -v brew >/dev/null; then
   # NOTE: homebrew installs xcode command line tools
   curl -fsS \
