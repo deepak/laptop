@@ -13,7 +13,7 @@ chmod 644 ~/.ssh/id_rsa.pub ~/.ssh/id_ed25519.pub
 # chmod 644 ~/.ssh/authorized_keys
 # chmod 644 ~/.ssh/known_hosts
 
-cat > ~/.ssh/config <<EOF
+cat > "$HOME/.ssh/config" <<EOF
 Host *
   PasswordAuthentication no
   ChallengeResponseAuthentication no

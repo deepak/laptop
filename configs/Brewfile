@@ -27,10 +27,15 @@ brew "wrk"
 brew "shellcheck"
 cask "meld"
 
+# asdf requirements
+brew "coreutils"
+brew "gpg"
+
 # coding
 brew "exercism"
 cask "visual-studio-code"
 cask "hyper"
+brew "asdf"
 
 # browsers
 cask "google-chrome"

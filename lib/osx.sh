@@ -5,6 +5,7 @@ osascript -e 'tell application "System Preferences" to quit'
 
 # to see all the domains: `defaults domains | tr "," "\n" | tail -n +2 | uniq | sort | less`
 # and to read all the keys of a domaim: `defaults read com.apple.dock`
+# also `defaults read "Apple Global Domain"`
 
 # set computer name
 
@@ -112,3 +113,5 @@ echo "[INFO] disable macOS analytics"
 # Finder.app does not read config, even after restart
 # defaults write com.apple.finder WindowState.ShowSidebar -bool false && killall Finder
 # so write the whole config ?
+
+mkdir -p ~/Documents/{WebSaves,ToDesign,Code,CodeReading}
