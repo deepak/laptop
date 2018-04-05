@@ -40,4 +40,9 @@ ssh-add -D -K &> /dev/null
 # shellcheck disable=SC2086
 for f in "/$HOME/Library/Keychains"/*/keychain-2.db; do sqlite3 $f "delete from genp where agrp = 'com.apple.ssh.passphrases';"; done
 
+# NOTE: ssh-add help
+# list all keys: ssh-add -L
+# remove all keys: ssh-add -D -K
+# add a key: ssh-add -K ~/.ssh/id_rsa
+
 echo "[INFO] configure ssh"
