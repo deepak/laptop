@@ -11,6 +11,7 @@ brew "hub"
 brew "wifi-password"
 brew "youtube-dl"
 brew "httrack"
+brew "duti"
 cask "ngrok"
 
 # code tools
@@ -44,6 +45,9 @@ cask "firefox-developer-edition"
 # others
 cask "daisydisk"
 cask "skype"
+
+# fun
+cask "vlc"
 
 # fonts
 # https://github.com/Homebrew/homebrew-bundle/issues/291#issuecomment-333902433

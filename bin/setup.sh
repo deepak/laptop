@@ -13,6 +13,7 @@ source ./lib/nodejs.sh
 source ./lib/asdf.sh
 source ./lib/iterm.sh
 source ./lib/vscode.sh
+source ./lib/vlc.sh
 source ./lib/shell.sh
 
 ENDTIME=$(date +%s)
