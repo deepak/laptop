@@ -114,4 +114,4 @@ echo "[INFO] disable macOS analytics"
 # defaults write com.apple.finder WindowState.ShowSidebar -bool false && killall Finder
 # so write the whole config ?
 
-mkdir -p ~/Documents/{WebSaves,ToDesign,Code,CodeReading}
+mkdir -p ~/Documents/{WebSaves,ToDesign,Ebooks,Code,CodeReading}

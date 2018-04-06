@@ -25,8 +25,15 @@ brew "tree"
 brew "pstree"
 brew "wget"
 brew "wrk"
-brew "shellcheck"
 cask "meld"
+
+# bash
+brew "bash"
+brew "bash-completion@2"
+
+# bash linters
+brew "shellcheck"
+brew "checkbashisms"
 
 # asdf requirements
 brew "coreutils"
