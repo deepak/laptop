@@ -19,7 +19,7 @@ asdf install nodejs 8.11.1
 asdf global nodejs 8.11.1
 # asdf reshim nodejs 8.11.1
 
-npm install npm@latest -g
-npm install -g express htmlhint
+npm install npm@latest -g &> /dev/null
+npm install -g express htmlhint &> /dev/null
 
 echo "[INFO] install nodejs and packages"

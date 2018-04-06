@@ -1,0 +1,29 @@
+{
+	"HTML template": {
+		"prefix": "html",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"en\" dir=\"ltr\">"
+			"<head>",
+			"\t<!-- The following three meta tags *must* come first in the <head> and in this order -->",
+			"\t<!-- utf-8 for rendering our hipster emojis -->",
+			"\t<meta charset=\"utf-8\" />",
+			"\t<!-- IE needs it at the top, otherwise it might start parsing the html again -->",
+			"\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+			"\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+			"\t<!-- Allows control over where resources are loaded from. Place it early in the <head>, as the tag only applies to resources that are declared after it. -->",
+			"\t<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'\">",
+			"\t<title>${1:PageTitle}</title>",
+			"\t<link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"main.css\" />",
+			"\t<script src=\"main.js\"></script>",
+			"\t<style media=\"screen\">",
+			"\t</style>",
+			"</head>",
+			"<body>",
+			"\t$0",
+			"</body>",
+			"</html>"
+		],
+		"description": "Simple HTML5 starting point"
+	}
+}

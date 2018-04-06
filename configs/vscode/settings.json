@@ -160,4 +160,7 @@
 
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
+
+  "shellcheck.enable": true,
+  "shellcheck.customArgs": ["-check-sourced", "-shell bash"]
 }
