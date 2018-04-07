@@ -21,6 +21,8 @@ code --install-extension mkaufman.htmlhint
 code --install-extension JakeWilson.vscode-placeholder-images
 code --install-extension pranaygp.vscode-css-peek
 code --install-extension kisstkondoros.csstriggers
+# fucks up with css autocomplete
+# code --install-extension idleberg.emoji-code
 
 # javascript
 code --install-extension wix.vscode-import-cost

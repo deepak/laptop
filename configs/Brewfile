@@ -27,6 +27,14 @@ brew "wget"
 brew "wrk"
 cask "meld"
 
+# image optimization
+# brew "guetzli"
+brew "giflossy"
+brew "ffmpeg"
+brew "base64"
+cask "imageoptim"
+cask "handbrake"
+
 # bash
 brew "bash"
 brew "bash-completion@2"

@@ -25,9 +25,11 @@ fi
 # TODO: autocomplete does not work for alias
 alias gst="git status"
 alias gco="git checkout"
+alias gcl="git clone"
 alias b="brew"
 alias l="ls"
 alias ll="ls -al"
+alias lk="ls -alhS"
 EOF
 git config --global push.default simple
 
