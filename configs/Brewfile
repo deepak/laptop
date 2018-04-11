@@ -67,3 +67,6 @@ cask "vlc"
 # fonts
 # https://github.com/Homebrew/homebrew-bundle/issues/291#issuecomment-333902433
 cask "caskroom/fonts/font-fira-code"
+
+# static site
+brew "hugo"

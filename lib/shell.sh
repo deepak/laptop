@@ -26,6 +26,7 @@ fi
 alias gst="git status"
 alias gco="git checkout"
 alias gcl="git clone"
+alias gd="git diff"
 alias b="brew"
 alias l="ls"
 alias ll="ls -al"
