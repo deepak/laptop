@@ -11,26 +11,18 @@ export PATH="$(npm bin -g):$PATH"
 EOF
 
 ! cp /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash /usr/local/etc/bash_completion.d
+! cp "./configs/dotfiles/.bash_helpers" "$HOME/.bash_helpers"
 
 # NOTE: Terminal.app will crash if there is any mistake here
 # in which case, open up `.bash_profile` in vscode
 # in the open file dialog, type `cmd + shift + .`` to see hidden files
 cat > "$HOME/.bash_profile" <<EOF
 source "$HOME/.profile"
+source "$HOME/.bash_helpers"
 
 if [ -f /usr/local/share/bash-completion/bash_completion ]; then
   source /usr/local/share/bash-completion/bash_completion
 fi
-
-# TODO: autocomplete does not work for alias
-alias gst="git status"
-alias gco="git checkout"
-alias gcl="git clone"
-alias gd="git diff"
-alias b="brew"
-alias l="ls"
-alias ll="ls -al"
-alias lk="ls -alhS"
 EOF
 git config --global push.default simple
 

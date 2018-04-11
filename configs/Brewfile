@@ -53,6 +53,9 @@ cask "visual-studio-code"
 cask "hyper"
 brew "asdf"
 
+# node
+brew "yarn", args: ["without-node"]
+
 # browsers
 cask "google-chrome"
 cask "firefox-developer-edition"

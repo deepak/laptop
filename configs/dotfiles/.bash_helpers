@@ -1,0 +1,10 @@
+# TODO: autocomplete does not work for alias
+alias b="brew"
+alias g="git"
+alias gst="git status"
+alias gco="git checkout"
+alias gcl="git clone"
+alias gd="git diff"
+alias l="ls"
+alias ll="ls -al"
+alias lk="ls -alhS"
