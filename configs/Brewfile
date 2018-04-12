@@ -25,6 +25,7 @@ brew "tree"
 brew "pstree"
 brew "wget"
 brew "wrk"
+brew "git-hooks"
 cask "meld"
 
 # image optimization
