@@ -1,0 +1,7 @@
+[push]
+  default = simple
+[core]
+  editor = code --wait
+[url "git@github.com:"]
+  pushInsteadOf = git://github.com/
+  pushInsteadOf = https://github.com/

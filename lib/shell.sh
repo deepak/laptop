@@ -24,7 +24,10 @@ if [ -f /usr/local/share/bash-completion/bash_completion ]; then
   source /usr/local/share/bash-completion/bash_completion
 fi
 EOF
-git config --global push.default simple
+
+! cp "./configs/dotfiles/.gitconfig" "$HOME/.gitconfig"
+git config --global user.name "$GIT_USER_NAME"
+git config --global user.email "$GIT_USER_EMAIL"
 
 # this is needed because otherwise Terminal.app will prompt about closing the bash process on close
 # TODO: there are two bash process running `ps aux | grep bash` (not sure why).

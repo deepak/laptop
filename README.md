@@ -7,7 +7,7 @@ setup script for laptop. works and tested on macOS High Sierra (10.13)
 ## Setup
 
 1. configure as given below in `configuration needed`
-2. run `./bin/setup.sh` in Terminal.app
+2. run `GIT_USER_NAME=<name> GIT_USER_EMAIL=<email> ./bin/setup.sh` in Terminal.app
 
 ## configuration needed:
 
