@@ -4,6 +4,7 @@ tap "homebrew/services"
 tap "caskroom/cask"
 tap "caskroom/versions"
 tap "caskroom/fonts"
+tap "d12frosted/emacs-plus"
 
 # cli
 brew "mas"
@@ -52,6 +53,7 @@ brew "gpg"
 brew "exercism"
 cask "visual-studio-code"
 cask "hyper"
+brew "emacs-plus", args: ["HEAD", "with-24bit-color"], restart_service: true
 
 # languages
 brew "asdf"

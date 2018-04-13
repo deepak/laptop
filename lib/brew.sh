@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+realpath() {
+  ruby -e "require 'pathname'; puts Pathname.new('$1').realpath"
+}
+
 if ! command -v brew >/dev/null; then
   # NOTE: homebrew installs xcode command line tools
   curl -fsS \
@@ -25,5 +29,12 @@ brew cleanup
 # brew doctor
 # system_profiler SPFontsDataType | grep 'FiraCode'
 # check `brew leaves` for leaf nodes of the dependency graph. can uninstall if not used
+
+# shellcheck disable=SC2046
+ln -Fs $(find /usr/local -name "Emacs.app") "$HOME/Applications/Emacs.app"
+# shellcheck disable=SC2046
+ln -Fs $(realpath './configs/dotfiles/spacemacs/') "$HOME/.emacs.d"
+# shellcheck disable=SC2046
+ln -Fs $(realpath './configs/dotfiles/.spacemacs') "$HOME/.spacemacs"
 
 echo "[INFO] install xcode command line tools and homebrew"

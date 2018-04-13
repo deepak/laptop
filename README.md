@@ -6,8 +6,18 @@ setup script for laptop. works and tested on macOS High Sierra (10.13)
 
 ## Setup
 
-1. configure as given below in `configuration needed`
-2. run `GIT_USER_NAME=<name> GIT_USER_EMAIL=<email> ./bin/setup.sh` in Terminal.app
+1. clone repo and pull in submodules
+   ```sh
+   git clone git://github.com/deepak/laptop.git
+   git submodule update --init --recursive
+   ```
+   revert to the last known good state, in case there is a problem with the `spacemacs` submodule.
+   ```sh
+   cd configs/dotfiles/spacemacs
+   git checkout c7a103a772d808101d7635ec10f292ab9202d9ee
+   ```
+2. configure as given below in `configuration needed`
+3. run `GIT_USER_NAME=<name> GIT_USER_EMAIL=<email> ./bin/setup.sh` in Terminal.app
 
 ## configuration needed:
 
