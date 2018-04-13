@@ -27,6 +27,9 @@ code --install-extension kisstkondoros.csstriggers
 # javascript
 code --install-extension wix.vscode-import-cost
 
+# golang
+code --install-extension lukehoban.Go
+
 # bash
 code --install-extension timonwong.shellcheck
 

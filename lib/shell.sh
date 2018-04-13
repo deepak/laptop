@@ -7,7 +7,8 @@ set -o nounset
 
 cat > "$HOME/.profile" <<EOF
 source /usr/local/opt/asdf/asdf.sh
-export PATH="$(npm bin -g):$PATH"
+export GOPATH="$HOME/go"
+export PATH="$(npm bin -g):$PATH:$(go env GOROOT)/bin:$(go env GOPATH)/bin"
 EOF
 
 ! cp /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash /usr/local/etc/bash_completion.d

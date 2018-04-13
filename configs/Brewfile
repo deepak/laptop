@@ -52,10 +52,11 @@ brew "gpg"
 brew "exercism"
 cask "visual-studio-code"
 cask "hyper"
-brew "asdf"
 
-# node
+# languages
+brew "asdf"
 brew "yarn", args: ["without-node"]
+brew "go"
 
 # browsers
 cask "google-chrome"

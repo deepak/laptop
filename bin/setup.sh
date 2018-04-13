@@ -12,6 +12,7 @@ source ./lib/brew.sh
 source ./lib/asdf.sh
 source ./lib/nodejs.sh
 source ./lib/ruby.sh
+source ./lib/golang.sh
 source ./lib/iterm.sh
 source ./lib/vscode.sh
 source ./lib/vlc.sh
