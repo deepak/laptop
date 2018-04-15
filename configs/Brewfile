@@ -34,6 +34,7 @@ cask "meld"
 brew "giflossy"
 brew "ffmpeg"
 brew "base64"
+brew "svgo"
 cask "imageoptim"
 cask "handbrake"
 
