@@ -21,6 +21,9 @@ code --install-extension mkaufman.htmlhint
 code --install-extension JakeWilson.vscode-placeholder-images
 code --install-extension pranaygp.vscode-css-peek
 code --install-extension kisstkondoros.csstriggers
+# even VSCode has `http://jsbeautifier.org` internally but it does not work for hugo
+# templates (no idea why ?). But this extension handles it like a champ.
+code --install-extension HookyQR.beautify
 # fucks up with css autocomplete
 # code --install-extension idleberg.emoji-code
 
