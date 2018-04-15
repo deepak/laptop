@@ -165,5 +165,9 @@
   "shellcheck.enable": true,
   "shellcheck.customArgs": ["-check-sourced", "-shell bash"],
 
-  "go.formatTool": "gofmt"
+  "go.formatTool": "gofmt",
+
+  "files.associations": {
+    "Brewfile": "ruby"
+  }
 }
