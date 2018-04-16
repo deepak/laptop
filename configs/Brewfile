@@ -71,6 +71,7 @@ cask "skype"
 
 # fun
 cask "vlc"
+cask "transmission"
 
 # fonts
 # https://github.com/Homebrew/homebrew-bundle/issues/291#issuecomment-333902433

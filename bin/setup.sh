@@ -16,6 +16,7 @@ source ./lib/golang.sh
 source ./lib/iterm.sh
 source ./lib/vscode.sh
 source ./lib/vlc.sh
+source ./lib/transmission.sh
 source ./lib/shell.sh
 
 ENDTIME=$(date +%s)
