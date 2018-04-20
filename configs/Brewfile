@@ -28,7 +28,7 @@ brew "wget"
 brew "wrk"
 brew "git-hooks"
 # https://facebook.github.io/watchman/docs/install.html#mac-os-file-descriptor-limits
-brew "watchman"
+brew "watchman" # status: evaluating
 cask "meld"
 
 # image optimization
