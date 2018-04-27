@@ -80,6 +80,9 @@ cask "vlc"
 cask "transmission"
 
 # fonts
+cask "skyfonts"
+# open "/usr/local/Caskroom/skyfonts/5.9.2.1/Install SkyFonts.app"
+# install top 50 fonts from google fonts
 # https://github.com/Homebrew/homebrew-bundle/issues/291#issuecomment-333902433
 cask "caskroom/fonts/font-fira-code"
 
