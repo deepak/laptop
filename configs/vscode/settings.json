@@ -29,6 +29,11 @@
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
 
+  "[css]": {
+      "editor.formatOnSave": false,
+      "editor.formatOnPaste": false,
+      "editor.formatOnType": false,
+  },
   "[javascript]": {
     "editor.formatOnSave": false,
     "editor.formatOnPaste": false,
@@ -168,6 +173,9 @@
   "go.formatTool": "gofmt",
 
   "files.associations": {
-    "Brewfile": "ruby"
+    "Brewfile": "ruby",
+    "*.pcss": "css",
+    ".stylelintrc": "json",
+    ".browserslistrc": "plaintext"
   }
 }

@@ -61,6 +61,7 @@ brew "exercism"
 cask "visual-studio-code"
 cask "hyper"
 brew "emacs-plus", args: ["HEAD", "with-24bit-color"], restart_service: true
+brew "cmake"
 
 # languages
 brew "asdf"
